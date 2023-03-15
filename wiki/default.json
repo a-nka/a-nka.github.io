@@ -239,7 +239,20 @@
             "children": [
               {
                 "type": "text",
-                "text": "item 2"
+                "text": "item 2 with "
+              },
+              {
+                "type": "strong",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " text"
               }
             ]
           }
@@ -254,7 +267,27 @@
             "children": [
               {
                 "type": "text",
-                "text": "item 3"
+                "text": "item 3 "
+              },
+              {
+                "type": "link",
+                "link": "/",
+                "children": [
+                  {
+                    "type": "emphasis",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "link"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "?????"
+                  }
+                ],
+                "title": null
               }
             ]
           },
@@ -272,28 +305,6 @@
                         "text": "item 3.1"
                       }
                     ]
-                  },
-                  {
-                    "type": "list",
-                    "children": [
-                      {
-                        "type": "list_item",
-                        "children": [
-                          {
-                            "type": "block_text",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "item 3.1.1"
-                              }
-                            ]
-                          }
-                        ],
-                        "level": 3
-                      }
-                    ],
-                    "ordered": false,
-                    "level": 3
                   }
                 ],
                 "level": 2

@@ -25,10 +25,9 @@ testing lists
 
 unordered list:
 - item 1
-- item 2
-- item 3
+- item 2 with **bold** text
+- item 3 [*link*?????](/)
     * item 3.1
-        - item 3.1.1
     * item 3.2
 - item 4
 
