@@ -1,141 +1,526 @@
 [
-    {
-        "type": "heading",
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "main title"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "short description with a "
+      },
+      {
+        "type": "link",
+        "link": "https://www.soundcloud.com",
         "children": [
-            {
+          {
+            "type": "text",
+            "text": "link"
+          }
+        ],
+        "title": null
+      },
+      {
+        "type": "text",
+        "text": " to test for hyperlinks and "
+      },
+      {
+        "type": "strong",
+        "children": [
+          {
+            "type": "text",
+            "text": "bold"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " and "
+      },
+      {
+        "type": "emphasis",
+        "children": [
+          {
+            "type": "text",
+            "text": "italic"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " text to test for markdown"
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 1"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "this is a sample text that contains "
+      },
+      {
+        "type": "strong",
+        "children": [
+          {
+            "type": "text",
+            "text": "bold"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " and "
+      },
+      {
+        "type": "emphasis",
+        "children": [
+          {
+            "type": "text",
+            "text": "italic"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " text to test for markdown"
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 2"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "paragraph\nnew paragraph ?"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "and what about this ?"
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 3"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 3.1"
+      }
+    ],
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "this is a sample text with "
+      },
+      {
+        "type": "link",
+        "link": "https://www.soundcloud.com",
+        "children": [
+          {
+            "type": "strong",
+            "children": [
+              {
                 "type": "text",
-                "text": "main title"
-            }
+                "text": "Alféa"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", a link that includes bold text"
+          }
+        ],
+        "title": null
+      },
+      {
+        "type": "text",
+        "text": " to test for hyperlinks"
+      }
+    ]
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 3.2"
+      }
+    ],
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "testing lists"
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "unordered list:"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "children": [
+      {
+        "type": "list_item",
+        "children": [
+          {
+            "type": "block_text",
+            "children": [
+              {
+                "type": "text",
+                "text": "item 1"
+              }
+            ]
+          }
         ],
         "level": 1
-    },
-    {
-        "type": "paragraph",
+      },
+      {
+        "type": "list_item",
         "children": [
-            {
+          {
+            "type": "block_text",
+            "children": [
+              {
                 "type": "text",
-                "text": "short description"
-            }
-        ]
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 1"
-            }
+                "text": "item 2"
+              }
+            ]
+          }
         ],
-        "level": 2
-    },
-    {
-        "type": "paragraph",
+        "level": 1
+      },
+      {
+        "type": "list_item",
         "children": [
-            {
+          {
+            "type": "block_text",
+            "children": [
+              {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli."
-            }
-        ]
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 2"
-            }
-        ],
-        "level": 2
-    },
-    {
-        "type": "paragraph",
-        "children": [
-            {
-                "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli."
-            }
-        ]
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 3"
-            }
-        ],
-        "level": 2
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 3.1"
-            }
-        ],
-        "level": 3
-    },
-    {
-        "type": "paragraph",
-        "children": [
-            {
-                "type": "text",
-                "text": "this is a sample text that include the mention of "
-            },
-            {
-                "type": "link",
-                "link": "https://www.soundcloud.com",
+                "text": "item 3"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "children": [
+              {
+                "type": "list_item",
                 "children": [
-                    {
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
                         "type": "text",
-                        "text": "Alf\u00e9a"
-                    }
+                        "text": "item 3.1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list",
+                    "children": [
+                      {
+                        "type": "list_item",
+                        "children": [
+                          {
+                            "type": "block_text",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "item 3.1.1"
+                              }
+                            ]
+                          }
+                        ],
+                        "level": 3
+                      }
+                    ],
+                    "ordered": false,
+                    "level": 3
+                  }
                 ],
-                "title": null
-            },
-            {
-                "type": "text",
-                "text": " to test for hyperlinks"
-            }
-        ]
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 3.2"
-            }
+                "level": 2
+              },
+              {
+                "type": "list_item",
+                "children": [
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "item 3.2"
+                      }
+                    ]
+                  }
+                ],
+                "level": 2
+              }
+            ],
+            "ordered": false,
+            "level": 2
+          }
         ],
-        "level": 3
-    },
-    {
-        "type": "paragraph",
+        "level": 1
+      },
+      {
+        "type": "list_item",
         "children": [
-            {
+          {
+            "type": "block_text",
+            "children": [
+              {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli."
-            }
-        ]
-    },
-    {
-        "type": "heading",
-        "children": [
-            {
-                "type": "text",
-                "text": "title 4"
-            }
+                "text": "item 4"
+              }
+            ]
+          }
         ],
-        "level": 2
-    },
-    {
-        "type": "paragraph",
+        "level": 1
+      }
+    ],
+    "ordered": false,
+    "level": 1
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "ordered list:"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "children": [
+      {
+        "type": "list_item",
         "children": [
-            {
+          {
+            "type": "block_text",
+            "children": [
+              {
                 "type": "text",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli."
-            }
-        ]
-    }
+                "text": "item 1"
+              }
+            ]
+          }
+        ],
+        "level": 1
+      },
+      {
+        "type": "list_item",
+        "children": [
+          {
+            "type": "block_text",
+            "children": [
+              {
+                "type": "text",
+                "text": "item 2"
+              }
+            ]
+          }
+        ],
+        "level": 1
+      },
+      {
+        "type": "list_item",
+        "children": [
+          {
+            "type": "block_text",
+            "children": [
+              {
+                "type": "text",
+                "text": "item 3"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "children": [
+              {
+                "type": "list_item",
+                "children": [
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "item 3.1"
+                      }
+                    ]
+                  }
+                ],
+                "level": 2
+              }
+            ],
+            "ordered": false,
+            "level": 2
+          },
+          {
+            "type": "list",
+            "children": [
+              {
+                "type": "list_item",
+                "children": [
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "item 3.2"
+                      }
+                    ]
+                  }
+                ],
+                "level": 2
+              }
+            ],
+            "ordered": true,
+            "level": 2
+          },
+          {
+            "type": "list",
+            "children": [
+              {
+                "type": "list_item",
+                "children": [
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "item 3.3"
+                      }
+                    ]
+                  }
+                ],
+                "level": 2
+              }
+            ],
+            "ordered": false,
+            "level": 2
+          },
+          {
+            "type": "list",
+            "children": [
+              {
+                "type": "list_item",
+                "children": [
+                  {
+                    "type": "block_text",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "item 3.4"
+                      }
+                    ]
+                  }
+                ],
+                "level": 2
+              }
+            ],
+            "ordered": true,
+            "level": 2,
+            "start": 2
+          }
+        ],
+        "level": 1
+      },
+      {
+        "type": "list_item",
+        "children": [
+          {
+            "type": "block_text",
+            "children": [
+              {
+                "type": "text",
+                "text": "item 4"
+              }
+            ]
+          }
+        ],
+        "level": 1
+      }
+    ],
+    "ordered": true,
+    "level": 1
+  },
+  {
+    "type": "heading",
+    "children": [
+      {
+        "type": "text",
+        "text": "title 4"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "text",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli."
+      }
+    ]
+  }
 ]

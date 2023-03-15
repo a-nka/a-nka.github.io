@@ -1,4 +1,5 @@
 import os
+import json
 
 import mistune
 
@@ -53,6 +54,8 @@ def generate_pages(folder: str, target: str) -> None:
             # Generate HTML
             with open(os.path.join(target, file.replace('.md', '.html')), 'w', encoding = 'utf-8') as t:
                 t.write(html.generate(ast))
+                with open(os.path.join(target, file.replace('.md', '.json')), 'w', encoding = 'utf-8') as l:
+                    l.write(json.dumps(ast, indent = 2, ensure_ascii = False))
 
 if __name__ == '__main__':
     generate_pages('../raw', '../wiki')
