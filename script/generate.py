@@ -3,7 +3,7 @@ import json
 
 import mistune
 
-from htmlgen import HTMLGenerator
+from renderer import Renderer
 
 # Logger setup
 # ----------------------------------------------------
@@ -41,21 +41,18 @@ sys.excepthook = excepthook
 def generate_pages(folder: str, target: str) -> None:
     """Generate pages from markdown files in a folder"""
 
-    markdown = mistune.create_markdown(renderer = 'ast')
+    renderer = Renderer()
+    markdown = mistune.create_markdown(renderer = renderer)
     with open('../base.html', 'r', encoding = 'utf-8') as f:
-        html = HTMLGenerator(f.read())
+        base = f.read()
 
     files = os.listdir(folder)
 
-
     for file in files:
-        with open(os.path.join(folder, file), 'r', encoding = 'utf-8') as f:
-            ast = markdown(f.read())
-            # Generate HTML
-            with open(os.path.join(target, file.replace('.md', '.html')), 'w', encoding = 'utf-8') as t:
-                t.write(html.generate(ast))
-                with open(os.path.join(target, file.replace('.md', '.json')), 'w', encoding = 'utf-8') as l:
-                    l.write(json.dumps(ast, indent = 2, ensure_ascii = False))
+        with open(os.path.join(folder, file), 'r', encoding = 'utf-8') as input:
+            with open(os.path.join(target, file.replace('.md', '.html')), 'w', encoding = 'utf-8') as output:
+                html = markdown(input.read())
+                output.write(base.format(renderer.pageTitle, html))
 
 if __name__ == '__main__':
     generate_pages('../raw', '../wiki')
