@@ -15,9 +15,11 @@ and what about this ?
 
 ## title 3
 
-### title 3.1
+### title is **bold** lol
 
-this is a sample text with [**Alféa**, a link that includes bold text](https://www.soundcloud.com) to test for hyperlinks
+this is a sample text with [**Alféa**, a link that includes bold text](https://www.soundcloud.com "is that a hover effect !??!!") to test for hyperlinks
+
+lol
 
 ### title 3.2
 
@@ -27,8 +29,8 @@ unordered list:
 - item 1
 - item 2 with **bold** text
 - item 3 [*link*?????](/)
-    * item 3.1
-    * item 3.2
+    1. item 3.1
+    2. item 3.2
 - item 4
 
 ordered list:
@@ -37,10 +39,35 @@ ordered list:
 3. item 3
     * item 3.1
     1. item 3.2
-    * item 3.3
-    2. item 3.4
+    2. item 3.3
+    * item 3.4
 4. item 4
 
-## title 4
+## blockquotes
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna molli.
+this a paragraph
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
+## Horizontal Rules
+
+---
+
+***
+
+___
