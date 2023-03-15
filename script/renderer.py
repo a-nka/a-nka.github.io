@@ -11,13 +11,20 @@ class CSS():
 
     PARAGRAPH = 'paragraph'
     SUMMARY = 'summary'
+    CATEGORY_NOTE = 'category-note'
 
 class Renderer(mistune.HTMLRenderer):
 
-    def __init__(self):
+    CATEGORIES_PREFIX = 'categories:'
+
+    def __init__(self, categoryNames: dict[str, str]):
         super().__init__()
+        self.currentPage = None
         self.pageTitle = None
         self.foundSummary = False
+
+        self.categoryNames = categoryNames
+        self.categories = {cat : [] for cat in categoryNames.keys()}
 
     # inline level
 
@@ -62,6 +69,27 @@ class Renderer(mistune.HTMLRenderer):
         return f'<p class = "{CSS.PARAGRAPH}' + summary + '">' + text + '</p>\n'
     
     def heading(self, text: str, level: int) -> str:
-        if level == 1 and self.pageTitle is None:
+
+        # Register the page to its appropriate categories
+        if text.startswith(self.CATEGORIES_PREFIX) and level == 1:
+            pageCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
+            for category in pageCategories:
+                self.categories[category.strip()].append(
+                        {
+                            'title' : self.pageTitle, 
+                            'path' : self.currentPage
+                        }
+                    )
+            categoriesString = ', '.join([name for id, name in self.categoryNames.items() if id in pageCategories])
+            return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(pageCategories) > 1 else '') + ' : ' + categoriesString + '</p>\n'
+
+        # Set the page title
+        if self.pageTitle is None and level == 1:
             self.pageTitle = text
+
         return super().heading(text, level)
+
+    def reset(self) -> None:
+        self.currentPage = None
+        self.pageTitle = None
+        self.foundSummary = False

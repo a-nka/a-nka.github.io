@@ -1,5 +1,7 @@
 # main title
 
+# categories:place
+
 short description with a [link](https://www.soundcloud.com) to test for hyperlinks and **bold** and *italic* text to test for markdown
 
 ## title 1

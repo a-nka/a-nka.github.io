@@ -3,7 +3,7 @@ import json
 
 import mistune
 
-from renderer import Renderer
+from renderer import Renderer, CSS
 
 # Logger setup
 # ----------------------------------------------------
@@ -38,21 +38,48 @@ sys.excepthook = excepthook
 
 # ----------------------------------------------------
 
-def generate_pages(folder: str, target: str) -> None:
+def generate(folder: str, target: str) -> None:
     """Generate pages from markdown files in a folder"""
 
-    renderer = Renderer()
+    # Data needed for the generation
+    sitename = 'Destin RP'
+
+    with open('../data/categories.json', 'r', encoding = 'utf-8') as f:
+        categories = json.load(f)
+
+    renderer = Renderer(categories)
     markdown = mistune.create_markdown(renderer = renderer)
-    with open('../base.html', 'r', encoding = 'utf-8') as f:
-        base = f.read()
+
+    with open('../data/basePage.html', 'r', encoding = 'utf-8') as f:
+        basePage = f.read()
 
     files = os.listdir(folder)
 
+    # Generate pages
     for file in files:
         with open(os.path.join(folder, file), 'r', encoding = 'utf-8') as input:
-            with open(os.path.join(target, file.replace('.md', '.html')), 'w', encoding = 'utf-8') as output:
-                html = markdown(input.read())
-                output.write(base.format(renderer.pageTitle, html))
+            targetFile = os.path.join(target, file.replace('.md', '.html'))
+            renderer.currentPage = 'wiki/' + file.replace('.md', '.html')
+            html = markdown(input.read())
+            with open(targetFile, 'w', encoding = 'utf-8') as output:
+                output.write(basePage.format(renderer.pageTitle, sitename, html))
+            renderer.reset()
+            
+
+    # Generate categories
+    with open('../data/baseCategories.html', 'r', encoding = 'utf-8') as f:
+        baseCategories = f.read()
+
+    astCategories = renderer.categories
+    content = ''
+    for category, pages in astCategories.items():
+        content += '<h1>' + categories[category] + '</h1>\n<ul>\n'
+        for page in pages:
+            content += '<li><a href = "' + page['path'] + f'" class = "{CSS.LINK}">' + page['title'] + '</a></li>\n'
+        content += '</ul>\n'
+
+    with open('../Categories.html', 'w', encoding = 'utf-8') as f:
+        f.write(baseCategories.format(sitename, content))
 
 if __name__ == '__main__':
-    generate_pages('../raw', '../wiki')
+    generate('../raw', '../wiki')
