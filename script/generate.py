@@ -3,7 +3,9 @@ import json
 
 import mistune
 
-from renderer import Renderer, CSS
+from categorizer import Categorizer
+from css import CSS
+from renderer import Renderer
 
 # Logger setup
 # ----------------------------------------------------
@@ -42,12 +44,14 @@ def generate(folder: str, target: str) -> None:
     """Generate pages from markdown files in a folder"""
 
     # Data needed for the generation
+
     sitename = 'Destin RP'
 
     with open('../data/categories.json', 'r', encoding = 'utf-8') as f:
         categories = json.load(f)
 
-    renderer = Renderer(categories)
+    categorizer = Categorizer(categories, '../Categories.html')
+    renderer = Renderer(categorizer)
     markdown = mistune.create_markdown(renderer = renderer)
 
     with open('../data/basePage.html', 'r', encoding = 'utf-8') as f:
@@ -70,10 +74,10 @@ def generate(folder: str, target: str) -> None:
     with open('../data/baseCategories.html', 'r', encoding = 'utf-8') as f:
         baseCategories = f.read()
 
-    astCategories = renderer.categories
+    astCategories = categorizer.categorizedPages
     content = ''
     for category, pages in astCategories.items():
-        content += '<h1>' + categories[category] + '</h1>\n<ul>\n'
+        content += '<h2 id="' + category + '">' + categories[category] + '</h1>\n<ul>\n'
         for page in pages:
             content += '<li><a href = "' + page['path'] + f'" class = "{CSS.LINK}">' + page['title'] + '</a></li>\n'
         content += '</ul>\n'
@@ -82,4 +86,12 @@ def generate(folder: str, target: str) -> None:
         f.write(baseCategories.format(sitename, content))
 
 if __name__ == '__main__':
+    root = os.path.dirname(os.path.abspath(__file__))
+    source = os.path.join(root, 'raw')
+    target = os.path.join(root, 'wiki')
+    data = os.path.join(root, 'data')
+
+    sitename = 'Destin RP'
+
+
     generate('../raw', '../wiki')

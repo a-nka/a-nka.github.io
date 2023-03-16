@@ -1,30 +1,21 @@
 import mistune
 from mistune.util import escape_html
 
-class CSS():
-
-    LINK = 'link'
-    IMAGE = 'image'
-
-    ITALIC = 'italic'
-    BOLD = 'bold'
-
-    PARAGRAPH = 'paragraph'
-    SUMMARY = 'summary'
-    CATEGORY_NOTE = 'category-note'
+from css import CSS
+from categorizer import Categorizer
 
 class Renderer(mistune.HTMLRenderer):
 
     CATEGORIES_PREFIX = 'categories:'
 
-    def __init__(self, categoryNames: dict[str, str]):
+    def __init__(self, categorizer: Categorizer) -> None:
         super().__init__()
         self.currentPage = None
         self.pageTitle = None
         self.foundSummary = False
 
-        self.categoryNames = categoryNames
-        self.categories = {cat : [] for cat in categoryNames.keys()}
+        self.categorizer = categorizer
+
 
     # inline level
 
@@ -70,22 +61,15 @@ class Renderer(mistune.HTMLRenderer):
     
     def heading(self, text: str, level: int) -> str:
 
-        # Register the page to its appropriate categories
-        if text.startswith(self.CATEGORIES_PREFIX) and level == 1:
-            pageCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
-            for category in pageCategories:
-                self.categories[category.strip()].append(
-                        {
-                            'title' : self.pageTitle, 
-                            'path' : self.currentPage
-                        }
-                    )
-            categoriesString = ', '.join([name for id, name in self.categoryNames.items() if id in pageCategories])
-            return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(pageCategories) > 1 else '') + ' : ' + categoriesString + '</p>\n'
-
         # Set the page title
         if self.pageTitle is None and level == 1:
             self.pageTitle = text
+
+        # Register the page to its appropriate categories
+        elif text.startswith(self.CATEGORIES_PREFIX) and level == 1:
+            targetCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
+            categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
+            return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
 
         return super().heading(text, level)
 
