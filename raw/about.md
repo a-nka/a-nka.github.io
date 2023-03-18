@@ -16,11 +16,27 @@ Cet univers personnalisé continue de s'enrichir au fil du temps, au fur et à m
 
 Cependant, le wiki est encore un projet en cours de développement, et il est donc possible que certaines informations soient manquantes ou incomplètes.
 
-## Comment participer ?
+## Évolution du projet
+
+### Comment participer ?
 
 Le wiki est un projet communautaire, et il est donc possible de participer à son développement. Si vous souhaitez apporter des modifications, des corrections ou des ajouts, vous devez avoir rejoint le serveur Discord. Pour cela, vous avez le lien **Notre Discord** dans la barre de navigation à gauche.
 
-De là, vous pourrez prendre contact avec l'administration pour procéder aux modifcations. Si vous avez des questions ou des remarques, n'hésitez pas à contacter un membre de l'administration du serveur, qui se fera un plaisir de vous aider.
+De là, vous pourrez prendre contact avec l'administration pour procéder aux modifcations. Si vous avez des questions ou des remarques, n'hésitez pas à contacter un membre de l'administration du serveur, qui se fera un plaisir de vous aider. Toute suggestion ou idée est appréciée.
+
+### Perspectives d'évolution
+
+La priorité est actuellement donnée à des améliorations techniques, afin d'assurer la pérénnité du projet. En parallèle de cela, il existe un certain nombre de fonctionnalités non négligeables, notamment :
+
+* Construction d'une véritable page d'accueil
+* Ajout d'une page de présentation du serveur Discord
+* Rédaction de différents guides, par exemple :
+    - Guide de création de fiche de personnage
+    - Guide d'écriture d'un article du wiki
+    - Premiers pas dans le RP
+* Prise en charge des images
+
+Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétiques et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par l'administration du serveur Discord, et sont susceptibles d'évoluer en fonction des besoins.
 
 ## Crédits
 
