@@ -54,20 +54,24 @@ class Renderer(mistune.HTMLRenderer):
     
     def heading(self, text: str, level: int) -> str:
 
-        # Set the page title
-        if self.pageTitle is None and level == 1:
-            self.pageTitle = text
+        if level == 1:
 
-        if not self.foundSummary and level == 2:
+            # Set the page title
+            if self.pageTitle is None:
+                self.pageTitle = text
+
+            # Register the page to its appropriate categories
+            elif text.startswith(self.CATEGORIES_PREFIX):
+                targetCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
+                if not ('' in targetCategories and len(targetCategories) == 1):
+                    categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
+                    return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
+
+        # Skip the summary if not found before the first heading
+        elif not self.foundSummary and level == 2:
             self.foundSummary = True
 
-        # Register the page to its appropriate categories
-        elif text.startswith(self.CATEGORIES_PREFIX) and level == 1:
-            targetCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
-            if not ('' in targetCategories and len(targetCategories) == 1):
-                categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
-                return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
-
+        # Render the heading as usual
         return super().heading(text, level)
 
     def reset(self) -> None:

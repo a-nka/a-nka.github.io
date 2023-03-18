@@ -11,7 +11,7 @@ from renderer import Renderer
 # ----------------------------------------------------
 import logging, sys, traceback, types, typing
 
-logfile = '../gen.log'
+logfile = 'gen.log'
 
 logging.basicConfig(
     filename    = logfile,
@@ -40,35 +40,35 @@ sys.excepthook = excepthook
 
 # ----------------------------------------------------
 
-def generate(root: str, folder: str, target: str, data: str, sitename: str) -> None:
+def generate(root: str, source: str, target: str, data: str, sitename: str) -> None:
     """Generate pages from markdown files in a folder"""
 
     # Data needed for the generation
     with open(os.path.join(data, 'categories.json'), 'r', encoding = 'utf-8') as f:
         categories = json.load(f)
 
-    categorizer = Categorizer(categories, os.path.join(root, 'catégories.html'))
+    categorizer = Categorizer(categories, '/catégories.html')
     renderer = Renderer(categorizer)
     markdown = mistune.create_markdown(renderer = renderer)
 
     with open(os.path.join(data, 'basePage.html'), 'r', encoding = 'utf-8') as f:
         basePage = f.read()
 
-    files = os.listdir(folder)
+    rawMds = os.listdir(source)
 
     # Generate pages
-    for file in files:
-        with open(os.path.join(folder, file), 'r', encoding = 'utf-8') as input:
-            renderer.currentPage = os.path.join(target, file.replace('.md', '.html'))
+    for md in rawMds:
+        renderer.currentPage = os.path.join(target, md.replace('.md', '.html'))
+        with open(os.path.join(source, md), 'r', encoding = 'utf-8') as input:
             html = markdown(input.read())
-            with open(renderer.currentPage, 'w', encoding = 'utf-8') as output:
-                output.write(basePage.format(renderer.pageTitle, sitename, html))
-            renderer.reset()
+        with open(renderer.currentPage, 'w', encoding = 'utf-8') as output:
+            output.write(basePage.format(renderer.pageTitle, sitename, html))
+        renderer.reset()
             
     # TODO : Clean up
 
     # Generate categories
-    with open('../data/baseCategories.html', 'r', encoding = 'utf-8') as f:
+    with open(os.path.join(data, 'baseCategories.html'), 'r', encoding = 'utf-8') as f:
         baseCategories = f.read()
 
     astCategories = categorizer.categorizedPages
@@ -76,10 +76,10 @@ def generate(root: str, folder: str, target: str, data: str, sitename: str) -> N
     for category, pages in astCategories.items():
         content += '<h2 id="' + category + '">' + categories[category] + '</h1>\n<ul>\n'
         for page in pages:
-            content += '<li><a href = "' + page['path'] + f'" class = "{CSS.LINK}">' + page['title'] + '</a></li>\n'
+            content += '<li><a href = "' + os.path.relpath(page['path']) + f'" class = "{CSS.LINK}">' + page['title'] + '</a></li>\n'
         content += '</ul>\n'
 
-    with open('../catégories.html', 'w', encoding = 'utf-8') as f:
+    with open(os.path.join(root, 'catégories.html'), 'w', encoding = 'utf-8') as f:
         f.write(baseCategories.format(sitename, content))
 
     # End clean up
@@ -94,7 +94,7 @@ def generate_page(root: str, data: str, baseFile: str, sitename: str) -> None:
         f.write(base.format(sitename))
 
 if __name__ == '__main__':
-    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    root = '.'
     source = os.path.join(root, 'raw')
     wiki = os.path.join(root, 'wiki')
     data = os.path.join(root, 'data')

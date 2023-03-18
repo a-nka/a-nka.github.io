@@ -6,10 +6,10 @@ from css import CSS
 
 class Categorizer():
 
-    def __init__(self, categoryNames: dict[str, str], categoriesPagePath: str) -> None:
+    def __init__(self, categoryNames: dict[str, str], targetCategoriesPath: str) -> None:
         self.categoryNames = categoryNames
         self.categorizedPages = {cat : [] for cat in categoryNames.keys()}
-        self.categoriesPagePath = categoriesPagePath
+        self.targetCategoriesPath = targetCategoriesPath
 
     def addPage(self, title: str, path: str, categories: list[str]) -> list[str]:
         html = []
@@ -23,7 +23,7 @@ class Categorizer():
             except KeyError:
                 LOGGER.warning(f'Category {category} not found')
                 continue
-            html.append(f'<a href = "{self.categoriesPagePath}#{category}" class = "{CSS.LINK}">{self.categoryNames[category]}</a>')
+            html.append(f'<a href = "{self.targetCategoriesPath}#{category}" class = "{CSS.LINK}">{self.categoryNames[category]}</a>')
         return html
 
     def render(self, sitename: str) -> str:
