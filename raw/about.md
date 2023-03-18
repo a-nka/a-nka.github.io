@@ -35,6 +35,7 @@ La priorité est actuellement donnée à des améliorations techniques, afin d'a
     - Guide d'écriture d'un article du wiki
     - Premiers pas dans le RP
 * Prise en charge des images
+* Compatibilité avec les appareils mobiles
 
 Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétiques et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par l'administration du serveur Discord, et sont susceptibles d'évoluer en fonction des besoins.
 
