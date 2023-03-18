@@ -44,19 +44,12 @@ class Renderer(mistune.HTMLRenderer):
             s += ' title="' + escape_html(title) + '"'
         return s + f' class = "{CSS.IMAGE}" />'
     
-    def emphasis(self, text: str) -> str:
-        return f'<em class = "{CSS.ITALIC}">' + text + '</em>'
-    
-    def strong(self, text: str) -> str:
-        return f'<strong class = "{CSS.BOLD}">' + text + '</strong>'
-    
     # block level
 
     def paragraph(self, text: str) -> str:
         summary = ''
         if not self.foundSummary:
             summary = ' ' + CSS.SUMMARY
-            self.foundSummary = True
         return f'<p class = "{CSS.PARAGRAPH}' + summary + '">' + text + '</p>\n'
     
     def heading(self, text: str, level: int) -> str:
@@ -65,11 +58,15 @@ class Renderer(mistune.HTMLRenderer):
         if self.pageTitle is None and level == 1:
             self.pageTitle = text
 
+        if not self.foundSummary and level == 2:
+            self.foundSummary = True
+
         # Register the page to its appropriate categories
         elif text.startswith(self.CATEGORIES_PREFIX) and level == 1:
             targetCategories = text[len(self.CATEGORIES_PREFIX):].split(',')
-            categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
-            return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
+            if not ('' in targetCategories and len(targetCategories) == 1):
+                categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
+                return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
 
         return super().heading(text, level)
 
