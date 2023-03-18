@@ -1,0 +1,169 @@
+:root {
+    --dark-purple: rgb(79, 22, 68);
+    --light-purple: rgb(160, 10, 130);
+
+    --black: rgb(36, 36, 36);
+    --grey: rgb(112, 112, 112);
+    --light-grey: rgb(224, 224, 224);
+    --lighter-grey: rgb(235, 235, 235);
+    --white: rgb(255, 255, 255);
+
+    --menu-description-color: var(--grey);
+    --menu-background-color: var(--black);
+    --menu-text-color: var(--white);
+    --menu-hover-background-color: var(--dark-purple);
+    --menu-hover-text-color: var(--white);
+    --menu-hover-border-color: var(--light-purple);
+
+    --main-background-color: var(--white);
+    --main-h-em-background-color: var(--grey);
+    --main-m-em-background-color: var(--light-grey);
+    --main-s-em-background-color: var(--lighter-grey);
+    --main-linear-gradient-color: -webkit-linear-gradient(left, var(--main-s-em-background-color) 0%, var(--main-background-color) 100%);
+    --main-text-color: var(--black);
+
+    --main-link-color: var(--light-purple);
+
+    --menu-width: 300px;
+    --menu-padding: 24px;
+    --main-margin: 20px;
+
+    --em-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --rg-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-family: var(--rg-font);
+    font-size: 18px;
+
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Base styles --- */
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 16px;
+    padding: 10px;
+    border: 2px solid var(--main-text-color);
+
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+}
+
+/* Main */
+
+main {
+    margin-left: calc(var(--menu-width) + var(--main-margin));
+    margin-right: var(--main-margin);
+    width: calc(100% - var(--menu-width) - 2 * var(--main-margin));
+}
+
+h1 {
+    font-family: var(--em-font);
+    font-size: 2em;
+}
+
+h2 {
+    font-family: var(--em-font);
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: var(--em-font);
+    font-size: 1.17em;
+}
+
+h4 {
+    font-family: var(--em-font);
+    font-size: 1em;
+}
+
+h5 {
+    font-family: var(--em-font);
+    font-size: 0.83em;
+}
+
+h6 {
+    font-family: var(--em-font);
+    font-size: 0.67em;
+}
+
+/* Text styles */
+
+strong {
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+}
+
+.paragraph {
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.summary {
+    background: var(--main-linear-gradient-color);
+    padding: 12px;
+    border-radius: 6px 16px 16px 6px;
+}
+
+blockquote {
+    border-radius: 16px;
+    padding: 12px;
+    background: var(--main-linear-gradient-color);
+    border-radius: 0 16px 16px 0;
+    border-left: 2px solid var(--main-h-em-background-color);
+}
+
+blockquote .paragraph:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.category-note {
+    font-size: 0.8em;
+    color: var(--menu-description-color);
+    margin-bottom: 12px;
+}
+
+/* Links */
+
+a, a:visited {
+    color: inherit;
+}
+
+main a {
+    font-weight: 500;
+}
+
+main a:hover {
+    color: var(--main-link-color);
+}
+
+.category-note a {
+    text-decoration: none;
+}
