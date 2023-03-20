@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    max-width: calc(var(--menu-width) - 2 * var(--menu-padding));
+    width: calc(var(--menu-width) - 2 * var(--menu-padding));
     height: 100%;
     overflow-x: hidden;
 
@@ -16,6 +16,7 @@
 }
 
 .menu-title {
+    width: fit-content;
     background: linear-gradient(to right, var(--light-purple) 0%, var(--menu-text-color) 40%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -54,4 +55,46 @@
 
     padding-left: 12px;
     border-left: 4px solid var(--menu-hover-border-color);
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+    /* Menu */
+
+    .menu {
+        position: unset;
+        width: calc(100% - 2 * var(--menu-padding));
+    }
+
+    .menu hr {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .menu-links {
+        
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 0 6px 0 6px;
+        padding: 12px 12px 8px 12px;
+
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 0;
+
+        border-bottom: 4px solid var(--menu-background-color);
+        
+        transition: background-color 0.2s, color 0.2s, padding-bottom 0.05s, padding-top 0.2s, border-bottom 0.05s;
+    }
+
+    .menu a:hover {
+        padding: 12px 12px 8px 12px;
+        border-left: 0px;
+
+        background-color: var(--menu-hover-background-color);
+        color: var(--menu-hover-text-color);
+
+        border-bottom: 4px solid var(--menu-hover-border-color);
+    }
 }

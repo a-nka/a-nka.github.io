@@ -167,3 +167,16 @@ main a:hover {
 .category-note a {
     text-decoration: none;
 }
+
+/* --- Small screens style --- */
+
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+    
+    /* Main */
+
+    main {
+        margin-left: var(--main-margin);
+        margin-right: var(--main-margin);
+        width: calc(100% - 2 * var(--main-margin));
+    }
+}
