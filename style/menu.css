@@ -70,12 +70,9 @@
         margin-bottom: 24px;
     }
 
-    .menu-links {
-        
-    }
-
     .menu a {
         display: inline-block;
+        white-space: nowrap;
         margin: 0 6px 0 6px;
         padding: 12px 12px 8px 12px;
 

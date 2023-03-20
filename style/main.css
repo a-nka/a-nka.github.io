@@ -171,6 +171,10 @@ main a:hover {
 /* --- Small screens style --- */
 
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
+
+    :root {
+        font-size: 14px;
+    }
     
     /* Main */
 
