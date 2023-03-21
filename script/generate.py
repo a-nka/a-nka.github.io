@@ -47,7 +47,11 @@ def generate(root: str, source: str, target: str, data: str, sitename: str) -> N
     with open(os.path.join(data, 'categories.json'), 'r', encoding = 'utf-8') as f:
         categories = json.load(f)
 
-    categorizer = Categorizer(categories, '/catégories.html')
+    # Category page template
+    with open(os.path.join(data, 'baseCategories.html'), 'r', encoding = 'utf-8') as f:
+        categoryPageLayout = f.read()
+
+    categorizer = Categorizer(categories, categoryPageLayout, '/catégories.html')
     renderer = Renderer(categorizer)
     markdown = mistune.create_markdown(renderer = renderer)
 
@@ -64,25 +68,10 @@ def generate(root: str, source: str, target: str, data: str, sitename: str) -> N
         with open(renderer.currentPage, 'w', encoding = 'utf-8') as output:
             output.write(basePage.format(renderer.pageTitle, sitename, html))
         renderer.reset()
-            
-    # TODO : Clean up
 
     # Generate categories
-    with open(os.path.join(data, 'baseCategories.html'), 'r', encoding = 'utf-8') as f:
-        baseCategories = f.read()
-
-    astCategories = categorizer.categorizedPages
-    content = ''
-    for category, pages in astCategories.items():
-        content += '<h2 id="' + category + '">' + categories[category] + '</h1>\n<ul>\n'
-        for page in pages:
-            content += '<li><a href = "' + os.path.relpath(page['path']) + f'" class = "{CSS.LINK}">' + page['title'] + '</a></li>\n'
-        content += '</ul>\n'
-
     with open(os.path.join(root, 'catégories.html'), 'w', encoding = 'utf-8') as f:
-        f.write(baseCategories.format(sitename, content))
-
-    # End clean up
+        f.write(categorizer.render(sitename))
 
     # Generate index and about pages
     generate_page(root, data, 'baseIndex.html', sitename)
