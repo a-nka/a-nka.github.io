@@ -66,6 +66,8 @@ class Renderer(mistune.HTMLRenderer):
                 if not ('' in targetCategories and len(targetCategories) == 1):
                     categoryNote = self.categorizer.addPage(self.pageTitle, self.currentPage, targetCategories)
                     return '<p class = "' + CSS.CATEGORY_NOTE + '">Catégorie' + ('s' if len(categoryNote) > 1 else '') + ' : ' + ', '.join(categoryNote) + '</p>\n'
+                else:
+                    return ''
 
         # Skip the summary if not found before the first heading
         elif not self.foundSummary and level == 2:
