@@ -37,6 +37,10 @@ class Deployer():
         renderer = Renderer(categorizer)
         markdown = mistune.create_markdown(renderer = renderer)
 
+        # Delete files in destination folder
+        for file in os.listdir(os.path.join(root.src, folder.to)):
+            os.remove(os.path.join(root.src, folder.to, file))
+
         undeployedPages = os.listdir(os.path.join(root.src, folder.src))
         for page in undeployedPages:
             toPage = page.replace('.md', '.html')
