@@ -1,6 +1,6 @@
-# Sample guide
+# A definetly cool and stuff guide
 
-# categories:guide,misc
+# categories:
 
 hey there this is a guide for you to read and learn from and stuff like that and it's really cool and stuff
 
@@ -17,7 +17,7 @@ but here's a list of things you can do:
 * so i'm just going to keep typing
 * and it's really cool and stuff
 
-## another heading
+## stuff going on
 
 and you can have more headings like this and it's really cool and stuff
 
@@ -28,3 +28,22 @@ the thing is that i wanted to test for better site generation, to split the scri
 ## anyway
 
 so yeah that's a guide which from you can learn and stuff like that and it's really cool and stuff
+
+### bye
+
+and that's it and it's really cool and stuff
+
+### credits
+
+* me
+* myself
+* and i
+* and it's really cool and stuff
+
+### famous quotes
+
+> "oh hi mark" - John Travolta
+
+> "learn your place" - me to cena
+
+> "i'm a cool guide" - a probably ~~buff~~ stuff guide
