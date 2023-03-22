@@ -6,10 +6,10 @@ from css import CSS
 
 class Categorizer():
 
-    def __init__(self, categories: dict[str, dict[str, str | dict]], pageLayout: str, deploymentPath: str) -> None:
+    def __init__(self, categories: dict[str, dict[str, str | dict]], pageTemplate: str, deploymentPath: str) -> None:
         self.categories = categories
         self.sortedPages = {id : {'pages' : [], 'subs' : {sub : [] for sub in cat['subs'].keys()}} for id, cat in categories.items()}
-        self.pageLayout = pageLayout
+        self.pageTemplate = pageTemplate
         self.deploymentPath = deploymentPath
 
     def _getNameAsSubCategory(self, category: str) -> tuple[str, str] | tuple[None, None]:
@@ -65,4 +65,4 @@ class Categorizer():
             # Add the category to the content
             content += title + withoutSubCategoryList + withSubCategoryList
         # Render the category page with the categories
-        return self.pageLayout.format(sitename, content)
+        return self.pageTemplate.format(sitename, content)

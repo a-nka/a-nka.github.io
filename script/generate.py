@@ -1,11 +1,7 @@
 import os
 import json
 
-import mistune
-
-from categorizer import Categorizer
-from css import CSS
-from renderer import Renderer
+from deployer import Deployer, DeploymentPath
 
 # Logger setup
 # ----------------------------------------------------
@@ -40,54 +36,22 @@ sys.excepthook = excepthook
 
 # ----------------------------------------------------
 
-def generate(root: str, source: str, target: str, data: str, sitename: str) -> None:
-    """Generate pages from markdown files in a folder"""
-
-    # Data needed for the generation
-    with open(os.path.join(data, 'categories.json'), 'r', encoding = 'utf-8') as f:
-        categories = json.load(f)
-
-    # Category page template
-    with open(os.path.join(data, 'baseCategories.html'), 'r', encoding = 'utf-8') as f:
-        categoryPageLayout = f.read()
-
-    categorizer = Categorizer(categories, categoryPageLayout, '/catégories.html')
-    renderer = Renderer(categorizer)
-    markdown = mistune.create_markdown(renderer = renderer)
-
-    with open(os.path.join(data, 'basePage.html'), 'r', encoding = 'utf-8') as f:
-        basePage = f.read()
-
-    rawMds = os.listdir(source)
-
-    # Generate pages
-    for md in rawMds:
-        renderer.currentPage = os.path.join(target, md.replace('.md', '.html'))
-        with open(os.path.join(source, md), 'r', encoding = 'utf-8') as input:
-            html = markdown(input.read())
-        with open(renderer.currentPage, 'w', encoding = 'utf-8') as output:
-            output.write(basePage.format(renderer.pageTitle, sitename, html))
-        renderer.reset()
-
-    # Generate categories
-    with open(os.path.join(root, 'catégories.html'), 'w', encoding = 'utf-8') as f:
-        f.write(categorizer.render(sitename))
-
-    # Generate index and about pages
-    generate_page(root, data, 'baseIndex.html', sitename)
-
-def generate_page(root: str, data: str, baseFile: str, sitename: str) -> None:
-    with open(os.path.join(data, baseFile), 'r', encoding = 'utf-8') as f:
-        base = f.read()
-    with open(os.path.join(root, baseFile[4:].lower()), 'w', encoding = 'utf-8') as f:
-        f.write(base.format(sitename))
-
 if __name__ == '__main__':
-    root = '.'
-    source = os.path.join(root, 'raw')
-    wiki = os.path.join(root, 'wiki')
-    data = os.path.join(root, 'data')
 
     sitename = 'Destin RP'
 
-    generate(root, source, wiki, data, sitename)
+    root = DeploymentPath('.', '/')
+    wiki = DeploymentPath('raw', 'wiki')
+    data = os.path.join(root.src, 'data')
+
+    with open(os.path.join(data, 'categories.json'), 'r', encoding = 'utf-8') as f:
+        categories = json.load(f)
+
+    deployer = Deployer(
+        sitename,
+        os.path.join(data, 'basePage.html'),
+        os.path.join(data, 'baseIndex.html'),
+        os.path.join(data, 'baseCategories.html')
+    )
+
+    deployer.deploy(root, wiki, categories)
