@@ -49,20 +49,30 @@ class Categorizer():
     def render(self, sitename: str) -> str:
         content = ''
         for category, pages in self.sortedPages.items():
+            # Build the subcategories of the category
+            allSubCategories = ''
+            for sub, subPages in pages['subs'].items():
+                subPages.sort(key = lambda page : page['title'])
+
+                listLinks = [f'<li><a href = "{page["path"]}" class = "{CSS.LINK}">{page["title"]}</a></li>' for page in subPages]
+                if len(listLinks) == 0:
+                    continue
+                
+                subTitle = '<h3 id="' + sub + '">' + self.categories[category]['subs'][sub] + '</h3>\n'
+                subCategoryList = f'<ul>\n' + '\n'.join(listLinks) + '</ul>\n'
+                allSubCategories += f'<div class="{CSS.SUBCATEGORY}">' + subTitle + subCategoryList + '</div>\n'
+                
+            # Check if the category at least has one page or one subcategory
+            if len(pages['pages']) == 0 and len(allSubCategories) == 0:
+                continue
+
             # Build the category
             title = '<h2 id="' + category + '">' + self.categories[category]['name'] + '</h2>\n'
             pages['pages'].sort(key = lambda page : page['title'])
             listLinks = [f'<li><a href = "{page["path"]}" class = "{CSS.LINK}">{page["title"]}</a></li>' for page in pages['pages']]
-            withoutSubCategoryList = '<ul>\n' + '\n'.join(listLinks) + '</ul>\n'
-            # Build the subcategories of the category
-            withSubCategoryList = ''
-            for sub, subPages in pages['subs'].items():
-                subPages.sort(key = lambda page : page['title'])
-                listLinks = [f'<li><a href = "{page["path"]}" class = "{CSS.LINK}">{page["title"]}</a></li>' for page in subPages]
-                subTitle = '<h3 id="' + sub + '">' + self.categories[category]['subs'][sub] + '</h3>\n'
-                subCategoryList = f'<ul>\n' + '\n'.join(listLinks) + '</ul>\n'
-                withSubCategoryList += f'<div class="{CSS.SUBCATEGORY}">' + subTitle + subCategoryList + '</div>\n'
+            allPages = '<ul>\n' + '\n'.join(listLinks) + '</ul>\n'
+
             # Add the category to the content
-            content += title + withoutSubCategoryList + withSubCategoryList
+            content += title + allPages + allSubCategories
         # Render the category page with the categories
         return self.pageTemplate.format(sitename, content)
