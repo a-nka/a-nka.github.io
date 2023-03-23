@@ -6,10 +6,10 @@ Dans le monde magique, le nom d’une famille impose la terreur, la haine, la pe
 
 ## Composition
 
-* Hope Mikaelson ([Danielle Rose Russell](https://fr.wikipedia.org/wiki/Danielle_Rose_Russell "Actrice et mannequin américaine")): Fille de Klaus Mikaelson et Hayley Marshall, personnage joué dans le RP
-* Niklaus « Klaus » Mikaelson ([Joseph Morgan](https://fr.wikipedia.org/wiki/Joseph_Morgan "Acteur et réalisateur britannique")): Père de Hope Mikaelson
-* Elijah Mikaelson ([Daniel Gillies](https://fr.wikipedia.org/wiki/Daniel_Gillies "Acteur, réalisateur de cinéma et scénariste néo-zélandais")): Frère de Klaus Mikaelson
-* Rebekah Mikaelson ([Claire Holt](https://fr.wikipedia.org/wiki/Claire_Holt "Actrice américano-australienne")): Sœur de Klaus et d'Elijah Mikaelson
+* Hope Mikaelson ([Danielle Rose Russell](https://fr.wikipedia.org/wiki/Danielle_Rose_Russell "new:Actrice et mannequin américaine")): Fille de Klaus Mikaelson et Hayley Marshall, personnage joué dans le RP
+* Niklaus « Klaus » Mikaelson ([Joseph Morgan](https://fr.wikipedia.org/wiki/Joseph_Morgan "new:Acteur et réalisateur britannique")): Père de Hope Mikaelson
+* Elijah Mikaelson ([Daniel Gillies](https://fr.wikipedia.org/wiki/Daniel_Gillies "new:Acteur, réalisateur de cinéma et scénariste néo-zélandais")): Frère de Klaus Mikaelson
+* Rebekah Mikaelson ([Claire Holt](https://fr.wikipedia.org/wiki/Claire_Holt "new:Actrice américano-australienne")): Sœur de Klaus et d'Elijah Mikaelson
 * etc ...
 
 ## Citation

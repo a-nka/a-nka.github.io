@@ -7,6 +7,7 @@ from categorizer import Categorizer
 class Renderer(mistune.HTMLRenderer):
 
     CATEGORIES_PREFIX = 'categories:'
+    LINK_NEW_TAB = 'new:'
 
     def __init__(self, categorizer: Categorizer) -> None:
         super().__init__()
@@ -27,10 +28,21 @@ class Renderer(mistune.HTMLRenderer):
         if text is None:
             text = link
 
+        openInNewTab = False
+
+        if title is not None:
+            if title.startswith(self.LINK_NEW_TAB):
+                title = escape_html(title[len(self.LINK_NEW_TAB):])
+                openInNewTab = True
+            else:
+                title = escape_html(title)
+
+        newTabLink = 'target="_blank" rel="noopener noreferrer"' if openInNewTab else ''
+
         s = '<a href="' + self._safe_url(link) + '"'
         if title:
-            s += ' title="' + escape_html(title) + '"'
-        return s + f' class = "{CSS.LINK}">' + (text or link) + '</a>'
+            s += ' title="' + title + '"'
+        return s + f' class = "{CSS.LINK}"' + newTabLink + '>' + (text or link) + '</a>'
     
     def image(self,
               src: str,
