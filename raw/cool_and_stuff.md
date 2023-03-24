@@ -29,10 +29,14 @@ but hey boy look at this cool stuff :
 
 ```python
 def awesome_function():
-    print("cool stuff")
+    return "cool stuff"
+
+var = ''
 
 while True:
-    awesome_function()
+    var += awesome_function()
+
+print(var)
 ```
 
 and i can do code inline like this `"_".join(cool_stuff_list)` and it_s_really_cool_and_stuff
