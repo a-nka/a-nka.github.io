@@ -20,7 +20,7 @@ Cependant, le wiki est encore un projet en cours de développement, et il est do
 
 ### Comment participer ?
 
-Le wiki est un projet communautaire, et il est donc possible de participer à son développement. Si vous souhaitez apporter des modifications, des corrections ou des ajouts, vous devez avoir rejoint le serveur Discord. Pour cela, vous avez le lien **Notre Discord** dans la barre de navigation à gauche.
+Le wiki est un projet communautaire, et il est donc possible de participer à son développement. Si vous souhaitez apporter des modifications, des corrections ou des ajouts, vous devez avoir rejoint le serveur Discord. Pour cela, vous avez le lien **Notre Discord** dans le menu.
 
 De là, vous pourrez prendre contact avec l'administration pour procéder aux modifcations. Si vous avez des questions ou des remarques, n'hésitez pas à contacter un membre de l'administration du serveur, qui se fera un plaisir de vous aider. Toute suggestion ou idée est appréciée.
 

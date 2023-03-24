@@ -25,6 +25,18 @@ i wanted to make this guide really long to show you how it works but i don't kno
 
 the thing is that i wanted to test for better site generation, to split the script part in different classes and stuff like that and it's really cool and stuff
 
+but hey boy look at this cool stuff :
+
+```python
+def awesome_function():
+    print("cool stuff")
+
+while True:
+    awesome_function()
+```
+
+and i can do code inline like this `"_".join(cool_stuff_list)` and it_s_really_cool_and_stuff
+
 ## anyway
 
 so yeah that's a guide which from you can learn and stuff like that and it's really cool and stuff
