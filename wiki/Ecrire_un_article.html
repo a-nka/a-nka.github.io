@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/menu.css">
+
+    <!-- Title will be the first node of the .md file, which must be a <h1> tag equivalent -->
+    <title>Écrire un article de wiki - Destin RP</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <h1 class="menu-title">Destin RP</h1>
+        <p class="menu-description">Serveur de RP basé sur la série <em>Fate : The Winx Saga</em></p>
+        <hr/>
+        <div class="menu-links">
+            <a href="/">Page d'accueil</a>
+            <a href="/catégories.html">Catégories du wiki</a>
+            <a href="https://discord.com/invite/HEWD5RQfeS" target="_blank" rel="noopener noreferrer">Notre Discord</a>
+            <a href="/wiki/about.html">À propos</a>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <!-- Content will be the converted .md file -->
+            <h1>Écrire un article de wiki</h1>
+<p class = "category-note">Catégorie : <a href = "/catégories.html#guide" class = "link">Guides</a></p>
+<p class = "paragraph summary">Dans ce guide, nous verrons comment écrire un article de wiki, comment le structurer et le mettre en forme. Pour cela, nous utiliserons la syntaxe <a href="https://www.markdownguide.org/" title="Accueil du site officiel" class = "link"target="_blank" rel="noopener noreferrer">Markdown</a>, ce qui permet de rédiger plus rapidement et plus facilement qu'en <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" title="HyperText Markup Language - Langage de balisage" class = "link"target="_blank" rel="noopener noreferrer">HTML</a>, la syntaxe utilisée traditionnellement pour les sites internet.</p>
+<hr />
+
+<h2>Écrire un article</h2>
+<h3>Que mettre dans un article ?</h3>
+<p class = "paragraph">Un article de wiki est un article qui présente un évènement, une entité, un thème ou une information. Quelque soit le contenu, le sujet abordé est le cœur de la page, et les informations énoncées doivent toujours avor un rapport avec le sujet d'origine. Il peut être écrit par n'importe qui, et peut être modifié par n'importe qui, sous réserve de validation par l'administration du serveur et de l'auteur original. Il peut être court ou long, et peut contenir pour l'instant que du texte et des liens.</p>
+<p class = "paragraph">L'objectif d'un article de wiki est de présenter un sujet de manière claire et concise, et de fournir des informations utiles à la compréhension du sujet. Il doit être écrit de manière à ce que n'importe qui puisse le comprendre, et doit être structuré afin que l'on puisse facilement trouver l'information recherchée. Le style de rédaction devrait être neutre et éviter les jugements de valeur, mais il peut être personnel et subjectif dans notre cas, étant donné la nature du wiki.</p>
+<h3>Comment écrire un article ?</h3>
+<p class = "paragraph">Vous devez donc avoir les différentes parties de votre article en tête, et les rédiger dans un fichier texte. Pour cela, vous pouvez utiliser un éditeur de texte comme <a href="https://notepad-plus-plus.org/" title="Éditeur de texte gratuit et léger" class = "link"target="_blank" rel="noopener noreferrer">Notepad++</a>, qui permet de colorer la syntaxe Markdown et de voir en temps réel le rendu de l'article. Vous pouvez tout à fait vous contenter de l'éditeur de texte de base de votre ordinateur, l'essentiel est d'enregistrer le tout dans un fichier texte, et non pas dans un fichier Word ou autre.</p>
+<h2>Le Markdown</h2>
+<blockquote>
+<p class = "paragraph">Le formatage du texte avec le Markdown peut se révéler complexe. Totalement facultative, la partie suivante abordera la mise en forme du texte. Si vous avez des difficultés, vous pouvez tout à fait vous contenter d'écrire votre article que nous mettrons en forme par la suite.</p>
+<p class = "paragraph">Dans ce cas, vous pouvez rédiger votre article avec un traitement de texte. Nous vous demandons également de bien définir vos parties et sous-parties accompagnées de leurs titres.</p>
+</blockquote>
+<h3>Qu'est-ce que le Markdown ?</h3>
+<p class = "paragraph">Le Markdown est une syntaxe de balisage qui permet de mettre en forme du texte. Il est utilisé par de nombreux sites internet, dont GitHub, et permet de rédiger plus rapidement et plus facilement qu'en HTML, la syntaxe utilisée traditionnellement pour les sites internet. Il est très simple à apprendre, et il est possible de trouver de nombreux tutoriels sur internet. Son principe est simple : il suffit d'entourer le texte à mettre en forme avec des caractères spéciaux, comme des astérisques ou des crochets.</p>
+<p class = "paragraph">Pour commencer, il faut enregistrer votre fichier avec l'extension <code class=inline-code>.md</code> (pour <strong>M</strong>ark<strong>d</strong>own). D'habitude, un fichier texte s'enregistre au format <code class=inline-code>.txt</code>. Pour un article appelé par exemple <em>Alféa</em>, le nom du fichier devrait être <code class=inline-code>Alféa.md</code>. Il existe plusieurs façons de mettre en forme son texte, mais ici nous allons voir celles qui nous intéressent.</p>
+<h3>Comment styliser son texte ?</h3>
+<h4>Styles de base</h4>
+<table>
+<thead>
+<tr>
+  <th>Style</th>
+  <th>Format</th>
+  <th>Rendu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Italique</td>
+  <td><code class=inline-code>Texte en *italique*</code></td>
+  <td>Texte en <em>italique</em></td>
+</tr>
+<tr>
+  <td>Gras</td>
+  <td><code class=inline-code>Texte en **gras**</code></td>
+  <td>Texte en <strong>gras</strong></td>
+</tr>
+<tr>
+  <td>Barré</td>
+  <td><code class=inline-code>Texte ~~barré~~</code></td>
+  <td>Texte <del>barré</del></td>
+</tr>
+</tbody>
+</table>
+<h4>Les titres</h4>
+<p class = "paragraph">Vous pouvez définir des titres de parties à l'aide de croisillon, ou hashtag en bon anglais. Le nombre de <code class=inline-code>#</code> détermine le niveau de titre ; on peut alors obtenir des titres de niveau 1 jusqu'à 6. Par exemple, <code class=inline-code>## Histoire</code> fera un excellent titre de niveau 2 (un sous-titre, quoi) si vous avez déjà un titre de niveau 1 tel que <code class=inline-code># Alféa</code>.</p>
+<div class="highlight"><pre><span></span><span class="gh"># Titre de niveau 1</span>
+
+<span class="gu">## Titre de niveau 2</span>
+
+<span class="gu">### Titre de niveau 3</span>
+</pre></div>
+<h1>Titre de niveau 1</h1>
+<h2>Titre de niveau 2</h2>
+<h3>Titre de niveau 3</h3>
+<hr />
+<h4>Les citations</h4>
+<p class = "paragraph">Vous pouvez également définir des citations à l'aide de chevrons. Le style de la citation est similaire à celui utilisé par Discord.</p>
+<div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">Ceci est une citation</span>
+</pre></div>
+<blockquote>
+<p class = "paragraph">Ceci est une citation</p>
+</blockquote>
+<hr />
+<h4>Les listes à puces</h4>
+<p class = "paragraph">Vous pouvez définir des listes à puces à l'aide de tirets, d'étoiles ou autres.</p>
+<div class="highlight"><pre><span></span><span class="k">*</span> Élément 1
+<span class="k">*</span> Élément 2
+<span class="k">*</span> Élément 3
+    <span class="k">-</span> Élément 3.1
+    <span class="k">-</span> Élément 3.2
+    <span class="k">-</span> Élément 3.3
+<span class="k">*</span> Élément 4
+</pre></div>
+<ul>
+<li>Élément 1</li>
+<li>Élément 2</li>
+<li>Élément 3<ul>
+<li>Élément 3.1</li>
+<li>Élément 3.2</li>
+<li>Élément 3.3</li>
+</ul>
+</li>
+<li>Élément 4</li>
+</ul>
+<hr />
+<h5>Les liens</h5>
+<p class = "paragraph">Vous pouvez définir des liens à l'aide de crochets et de parenthèses. Le texte entre crochets est le texte du lien, et le texte entre parenthèses est l'URL du lien.</p>
+<p class = "paragraph">Par exemple, le texte <code class=inline-code>[Wiki Winx Club](https://winx.fandom.com/fr/wiki/Wiki_Winx &quot;Fandom Winx Club&quot;)</code> donnera le lien <a href="https://winx.fandom.com/fr/wiki/Wiki_Winx" title="Fandom Winx Club" class = "link">Wiki Winx Club</a> (vous pouvez passer la souris sur le lien pour voir le texte entre guillemets apparaître).</p>
+<h3>Un exemple de mise en forme</h3>
+<p class = "paragraph">Le bloc de texte ci-dessous donne l'article de wiki que vous pouvez trouver <a href="a-nka.github.io/wiki/Exemple.html" title="Exemple de mise en forme" class = "link">ici</a>. L'exemple est volontairement très simple, mais il vous donne une idée de ce que vous pouvez faire avec le Markdown, et est représentatif d'un article typique du wiki.</p>
+<div class="highlight"><pre><span></span><span class="gh"># Alféa</span>
+
+<span class="gs">**Alféa**</span> est un lycée magique célèbre dans l&#39;*Autre Monde*. Il est situé dans le royaume de <span class="ge">*Solaria*</span>, et il est réputé pour la qualité de son enseignement.
+
+<span class="gu">## Description</span>
+
+<span class="gs">**Alféa**</span> est un lycée qui enseigne la magie à des fées. Il est situé quelque part dans le monde des Winx, mais on ne sait pas où exactement. Son équipe enseignante vient de tous les horizons, et chaque professeur est réputé dans son propre domaine. Le nombre d&#39;étudiants atteint parfois plusieurs centaines, et tout les types de magies se confondent.
+
+<span class="gu">## Histoire</span>
+
+L&#39;histoire exacte du bâtiment est inconnue. On sait seulement qu&#39;il a été longuement utilisé comme lycée, mais il a pu être construit dans un but résidentiel en premier lieu. Situé en plein royaume solarien, il est possible qu&#39;il ait un rapport avec la famille royale. L&#39;origine sans doute [<span class="nt">mystique</span>](<span class="na">https://www.cnrtl.fr/definition/mystique &quot;Défition de mystique&quot;</span>) d&#39;**Alféa** est aussi fortement mis en valeur par la présence de nœuds de flux magique très importants à proximité du bâtiment.
+
+<span class="gu">## Personnages</span>
+
+<span class="gu">### Professeurs réputés</span>
+
+<span class="k">*</span> Farah Dowling
+<span class="k">*</span> Saul Silva
+<span class="k">*</span> Ben Harvey
+
+<span class="gu">### Étudiants</span>
+
+<span class="k">*</span> Fées du feu
+    <span class="k">-</span> Hope Mikaelson
+    <span class="k">-</span> Bloom Peters
+<span class="k">*</span> Fées de la terre
+    <span class="k">-</span> Terra Harvey
+    <span class="k">-</span> Sam Harvey
+</pre></div>
+<h2>Informations complémentaires</h2>
+<p class = "paragraph">Toutes les possibilités qu'offre le Markdown ne sont pas abordées ici, et ne sont pas encore toutes supportées par le wiki. Si vous souhaitez en savoir plus, vous pouvez consulter la <a href="https://www.markdownguide.org/" title="Documentation officielle du Markdown" class = "link"target="_blank" rel="noopener noreferrer">documentation officielle</a> pour suggérer des améliorations, ou consulter la page <a href="a-nka.github.io/wiki/about.html" title="À propos" class = "link">À propos</a> du wiki pour en savoir plus sur les améliorations à venir.</p>
+
+        </article>
+    
+        <footer>
+            <a class="footer-link" href="#top">Retour en haut de page</a>
+        </footer>
+    </main>
+
+</body>
+
+</html>
