@@ -26,18 +26,17 @@ De là, vous pourrez prendre contact avec l'administration pour procéder aux mo
 
 ### Perspectives d'évolution
 
-La priorité est actuellement donnée à des améliorations techniques, afin d'assurer la pérénnité du projet. En parallèle de cela, il existe un certain nombre de fonctionnalités non négligeables, notamment :
+De nombreux axes d'amélioration du wiki existent et sont envisagés. Les plus importants sont listés ci-dessous.
 
 * Construction d'une véritable page d'accueil
 * Ajout d'une page de présentation du serveur Discord
 * Rédaction de différents guides, par exemple :
     - Guide de création de fiche de personnage
-    - Guide d'écriture d'un article du wiki
     - Premiers pas dans le RP
 * Prise en charge des images
-* Compatibilité avec les appareils mobiles
+* Compatibilité avec les appareils mobiles (déjà en charge, mais besoin de retour utilisateur pour optimisation)
 
-Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétiques et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par l'administration du serveur Discord, et sont susceptibles d'évoluer en fonction des besoins.
+Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétique et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par l'administration du serveur Discord, et sont susceptibles d'évoluer en fonction des besoins.
 
 ## Crédits
 
