@@ -83,7 +83,8 @@ class Renderer(mistune.HTMLRenderer):
         return f'<p class = "{CSS.PARAGRAPH}' + summary + '">' + text + '</p>\n'
     
     def heading(self, text: str, level: int) -> str:
-
+        
+        hr = ''
         if level == 1:
 
             # Set the page title
@@ -102,9 +103,10 @@ class Renderer(mistune.HTMLRenderer):
         # Skip the summary if not found before the first heading
         elif not self.foundSummary and level == 2:
             self.foundSummary = True
+            hr = self.thematic_break() + '\n'
 
         # Render the heading as usual
-        return super().heading(text, level)
+        return hr + super().heading(text, level)
 
     def reset(self) -> None:
         self.currentPage = None

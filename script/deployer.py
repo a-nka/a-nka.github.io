@@ -1,7 +1,7 @@
 import os
 
 import mistune
-from mistune.plugins import plugin_strikethrough
+from mistune.plugins import plugin_strikethrough, plugin_table
 
 from categorizer import Categorizer
 from renderer import Renderer
@@ -34,9 +34,16 @@ class Deployer():
             output.write(content)
         
     def deploy(self, root: DeploymentPath, folder: DeploymentPath, categories: dict) -> None:
-        categorizer = Categorizer(categories, self.categoriesPageTemplate, os.path.join(root.to, 'catégories.html'))
+        categorizer = Categorizer(
+            categories,
+            self.categoriesPageTemplate,
+            os.path.join(root.to, 'catégories.html')
+        )
         renderer = Renderer(categorizer)
-        markdown = mistune.create_markdown(renderer = renderer, plugins = [plugin_strikethrough])
+        markdown = mistune.create_markdown(
+            renderer = renderer, 
+            plugins = [plugin_strikethrough, plugin_table]
+        )
 
         # Delete files in destination folder
         for file in os.listdir(os.path.join(root.src, folder.to)):

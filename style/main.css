@@ -19,7 +19,6 @@
     --main-h-em-background-color: var(--grey);
     --main-m-em-background-color: var(--light-grey);
     --main-s-em-background-color: var(--lighter-grey);
-    --main-linear-gradient-color: -webkit-linear-gradient(left, var(--main-s-em-background-color) 0%, var(--main-background-color) 100%);
     --main-text-color: var(--black);
 
     --main-link-color: var(--light-purple);
@@ -27,6 +26,7 @@
     --menu-width: 300px;
     --menu-padding: 24px;
     --main-margin: 20px;
+    --bottom-margin: 24px;
 
     --em-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --rg-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,6 +111,12 @@ h6 {
     font-size: 0.67em;
 }
 
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--main-m-em-background-color);
+}
+
 /* Text styles */
 
 strong {
@@ -122,21 +128,17 @@ p {
 }
 
 .paragraph {
-    margin-bottom: 24px;
+    margin-bottom: var(--bottom-margin);
     text-align: justify;
 }
 
 .summary {
-    background: var(--main-linear-gradient-color);
     padding: 12px;
-    border-radius: 6px 16px 16px 6px;
 }
 
 blockquote {
-    border-radius: 16px;
     padding: 12px;
-    border-radius: 0 16px 16px 0;
-    border-left: 5px solid var(--main-s-em-background-color);
+    border-left: 5px solid var(--main-m-em-background-color);
 }
 
 blockquote .paragraph:nth-last-child(1) {
@@ -161,7 +163,7 @@ pre {
 .highlight {
     padding: 16px;
     border-radius: 16px;
-    margin-bottom: 24px;
+    margin-bottom: var(--bottom-margin);
 }
 
 .subcategory {
@@ -193,6 +195,28 @@ main a:hover {
 
 .category-note a {
     text-decoration: none;
+}
+
+/* Tables */
+
+table {
+    /* center table */
+    margin-right: auto;
+    margin-bottom: var(--bottom-margin);
+}
+
+table, th, td {
+    border: 1px solid var(--main-m-em-background-color);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 16px 8px 16px;
+}
+
+th {
+    font-weight: 500;
+    text-align: left;
 }
 
 /* --- Small screens style --- */
