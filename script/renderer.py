@@ -60,7 +60,8 @@ class Renderer(mistune.HTMLRenderer):
         return s + f' class = "{CSS.IMAGE}" />'
     
     def codespan(self, text: str) -> str:
-        return '<code class=' + CSS.INLINE_CODE + '>' + escape(text) + '</code>'
+        # Replace spaces with non-breaking spaces
+        return '<code class=' + CSS.INLINE_CODE + '>' + escape(text.replace(' ', ' ')) + '</code>'
     
     def block_code(self, code: str, info: str = None) -> str:
         content = '<pre class=' + CSS.BLOCK_CODE + '><code'
