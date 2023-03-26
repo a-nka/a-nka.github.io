@@ -139,4 +139,4 @@ L'histoire exacte du bâtiment est inconnue. On sait seulement qu'il a été lon
 
 ## Informations complémentaires
 
-Toutes les possibilités qu'offre le Markdown ne sont pas abordées ici, et ne sont pas encore toutes supportées par le wiki. Si vous souhaitez en savoir plus, vous pouvez consulter la [documentation officielle](https://www.markdownguide.org/ "new:Documentation officielle du Markdown") pour suggérer des améliorations, ou consulter la page [À propos](a-nka.github.io/wiki/about.html "À propos") du wiki pour en savoir plus sur les améliorations à venir.
+Toutes les possibilités qu'offre le Markdown ne sont pas abordées ici, et ne sont pas encore toutes supportées par le wiki. Si vous souhaitez en savoir plus, vous pouvez consulter la [documentation officielle](https://www.markdownguide.org/ "new:Documentation officielle du Markdown") pour suggérer des améliorations, ou consulter la page [À propos](/wiki/about.html "À propos") du wiki pour en savoir plus sur les améliorations à venir.
