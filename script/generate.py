@@ -7,13 +7,7 @@ from deployer import Deployer, DeploymentPath
 # ----------------------------------------------------
 import logging, sys, traceback, types, typing
 
-logfile = 'gen.log'
-
 logging.basicConfig(
-    filename    = logfile,
-    filemode    = 'w',
-    encoding    = 'utf-8',
-
     level       = logging.DEBUG,
     format      = '%(asctime)s [ %(levelname)s ] %(name)s : %(message)s',
     datefmt     = '%d/%m/%Y %H:%M:%S'
