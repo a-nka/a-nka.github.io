@@ -6,6 +6,8 @@ Née comme une fée de l'eau, Anka Palavan tient dans les faits plus d'une fée 
 
 ## Histoire
 
+![Image d'Anka Palavan](/img/anka_1.png "Anka Palavan$Anka Palavan en 2022")
+
 ### Vie sur Terre
 
 Anka naît de parents fonctionnaires le 22 février 2004 en Autriche à Innsbruck. Comme elle, ses parents sont deux fées de l’eau et ont quitté le monde magique pour la Terre afin d’y trouver une vie plus tranquille. Diane, sa sœur de douze ans son aînée, est également une fée de l’eau accomplie. La fratrie compte également une sœur adoptive, elle aussi à Alféa, cependant celle-ci est en seconde année.

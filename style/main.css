@@ -189,6 +189,34 @@ pre {
     margin-bottom: 12px;
 }
 
+/* Images */
+
+figure.image {
+    margin: 0 0 24px 24px;
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    float: right;
+
+    gap: 12px;
+    padding: 12px;
+    border: 2px solid var(--main-m-em-background-color);
+    border-radius: 2px;
+}
+
+figure.image img {
+    max-width: var(--menu-width);
+    border-radius: 2px;
+} 
+
+figure.image figcaption {
+    max-width: var(--menu-width);
+    text-align: center;
+    font-style: italic;
+    color: var(--main-h-em-background-color);
+}
+
 /* Links */
 
 a, a:visited {

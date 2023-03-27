@@ -50,14 +50,18 @@ class Renderer(mistune.HTMLRenderer):
     def image(self,
               src: str,
               alt: str = '',
-              title: str | None = None
+              title: str = ''
               ) -> str:
         src = self._safe_url(src)
         alt = escape_html(alt)
-        s = '<img src="' + src + '" alt="' + alt + '"'
-        if title:
-            s += ' title="' + escape_html(title) + '"'
-        return s + f' class = "{CSS.IMAGE}" />'
+        try:
+            title, caption = [escape_html(t) for t in title.split('$', 1)]
+        except ValueError:
+            title = escape_html(title)
+	
+        imgTag = '<img src="' + src + '" alt="' + alt + '" title="' + title + f'" />'
+        figTag = '<figcaption>' + caption + '</figcaption>'
+        return f'<figure class = "{CSS.IMAGE}">' + imgTag + figTag + '</figure>'
     
     def codespan(self, text: str) -> str:
         # Replace spaces with non-breaking spaces
