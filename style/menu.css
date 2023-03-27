@@ -57,7 +57,7 @@
     border-left: 4px solid var(--menu-hover-border-color);
 }
 
-@media screen and (max-width: 800px), screen and (max-height: 400px) {
+@media screen and (max-width: 950px), screen and (max-height: 400px) {
     /* Menu */
 
     .menu {

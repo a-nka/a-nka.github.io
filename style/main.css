@@ -27,6 +27,7 @@
     --menu-padding: 24px;
     --main-margin: 20px;
     --bottom-margin: 24px;
+    --image-width: var(--menu-width);
 
     --em-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --rg-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -206,12 +207,12 @@ figure.image {
 }
 
 figure.image img {
-    max-width: var(--menu-width);
+    max-width: var(--image-width);
     border-radius: 2px;
 } 
 
 figure.image figcaption {
-    max-width: var(--menu-width);
+    max-width: var(--image-width);
     text-align: center;
     font-style: italic;
     color: var(--main-h-em-background-color);
@@ -259,9 +260,10 @@ th {
 
 /* --- Small screens style --- */
 
-@media screen and (max-width: 800px), screen and (max-height: 400px) {
+@media screen and (max-width: 950px), screen and (max-height: 400px) {
 
     :root {
+        --image-width: 150px;
         font-size: 14px;
     }
     
