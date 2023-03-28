@@ -20,6 +20,8 @@ Bien que l'affiliation leur semblait étrange, les trois sœurs n’eurent aucun
 
 Anka souhaite plus que tout apprendre selon ses envies, découvrir, côtoyer les personnes qu’elle admire pour connaître leur expérience. La Terre n’offrait pas cette possibilité. Aussi elle consacra les six premiers mois qui suivirent sa rentrée au lycée à lire ouvrage sur ouvrage. Grands littéraires ouverts d’esprit, ses parents disposaient d’une large bibliothèque constituée en majeure partie d’écrits issus du monde magique. Grande littéraire également, Anka était comblée, mais la réussite de Diane, se couronnant de diplômes, ajoutée à celle de leur sœur adoptive à Alféa lui firent ressentir la lenteur voire l’inexistence de ses propres progrès. Anka supporta très mal son piétinement et, bien que peu émotive, devint anxieuse et irritable. S’isolant rapidement de ses amis mais aussi de sa famille, elle rumina ses choix, sa propre vie, seule. La jeune femme passait ses rares moments de paix dans les montagnes, un grand espace ouvert, calme et empreint de sérénité.
 
+![Photographie de la Maria-Theresien-Strasse](https://cdn-blob.austria.info/cms-uploads-prod/default/0001/04/thumb_3235_default_three_columns.jpeg "Innsbruck, Autriche$La Maria-Theresien-Strasse à Innsbruck en Autriche")
+
 Un soir, particulièrement énervée après une énième dispute avec ses parents, Anka s'était aventurée loin dans les montagnes alpines. Ne trouvant plus son chemin dans les ténèbres, la jeune femme passa plusieurs heures dans le froid, trébucha dans la neige à multiples reprises ; jusqu’à chuter de plusieurs mètres de haut. Anka tomba dans l’épais manteau de neige et perdit conscience. Lorsqu’elle se réveilla, il faisait nuit, et son bras droit la faisait terriblement souffrir. C’était déjà une chance énorme d’avoir survécu, et sa fortune continuait de lui sourire tandis qu’elle trouvait un refuge de montagne. Anka y passa la nuit, seule, bloquée par la tempête. Retirant ses vêtements glacés, elle vit l’état désastreux et insensé de son bras. Une sorte de grande plaque gelée rongeait sa peau meurtrie, comme si de la glace avait recouvert son membre. Se mettant près du feu pour tout faire fondre, elle s'endormit, non sans mal.
 
 ### Arrivée à Alféa
@@ -68,3 +70,9 @@ Rencontrée lors de la fête de Seung, Yoona partage le point d'Anka sur Seung. 
 * Tassilo Shepherd  
 Ne s'étant vus qu'une fois sur le terrain en compagnie d'Hope, Anka s'est plutôt bien entendu avec lui.
 
+---
+
+## Sources
+
+* [Image d'Anka Palavan](https://www.instagram.com/seelcanyvz/ "new:@seelcanyvz sur Instagram")
+* [Photographie de la Maria-Theresien-Strasse](https://www.austria.info/fr/destinations/villes/innsbruck "new:Site touristique de la ville d'Innsbruck")
