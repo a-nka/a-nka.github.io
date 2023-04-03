@@ -8,7 +8,7 @@ Dans ce guide, nous verrons comment écrire un article de wiki, comment le struc
 
 ### Que mettre dans un article ?
 
-Un article de wiki est un article qui présente un évènement, une entité, un thème ou une information. Quelque soit le contenu, le sujet abordé est le cœur de la page, et les informations énoncées doivent toujours avor un rapport avec le sujet d'origine. Il peut être écrit par n'importe qui, et peut être modifié par n'importe qui, sous réserve de validation par l'administration du serveur et de l'auteur original. Il peut être court ou long, et peut contenir pour l'instant que du texte et des liens.
+Un article de wiki est un article qui présente un évènement, une entité, un thème ou une information. Quelque soit le contenu, le sujet abordé est le cœur de la page, et les informations énoncées doivent toujours avor un rapport avec le sujet d'origine. Il peut être écrit par n'importe qui, et peut être modifié par n'importe qui, sous réserve de validation par l'administration du serveur et de l'auteur original. Il peut être court ou long, et peut contenir du texte, des listes à puces, des images et des liens.
 
 L'objectif d'un article de wiki est de présenter un sujet de manière claire et concise, et de fournir des informations utiles à la compréhension du sujet. Il doit être écrit de manière à ce que n'importe qui puisse le comprendre, et doit être structuré afin que l'on puisse facilement trouver l'information recherchée. Le style de rédaction devrait être neutre et éviter les jugements de valeur, mais il peut être personnel et subjectif dans notre cas, étant donné la nature du wiki.
 

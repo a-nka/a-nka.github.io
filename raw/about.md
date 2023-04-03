@@ -20,7 +20,7 @@ Cependant, le wiki est encore un projet en cours de développement, et il est do
 
 ### Comment participer ?
 
-Le wiki est un projet communautaire, et il est donc possible de participer à son développement. Si vous souhaitez apporter des modifications, des corrections ou des ajouts, vous devez avoir rejoint le serveur Discord. Pour cela, vous avez le lien **Notre Discord** dans le menu.
+Le wiki est un projet communautaire, et il est donc possible de participer à son développement. Si vous souhaitez apporter des modifications, des corrections ou des ajouts, vous devez avoir rejoint le serveur Discord. Pour cela, vous avez le lien **Discord** dans le menu.
 
 De là, vous pourrez prendre contact avec l'administration pour procéder aux modifcations. Si vous avez des questions ou des remarques, n'hésitez pas à contacter un membre de l'administration du serveur, qui se fera un plaisir de vous aider. Toute suggestion ou idée est appréciée.
 
@@ -33,10 +33,9 @@ De nombreux axes d'amélioration du wiki existent et sont envisagés. Les plus i
 * Rédaction de différents guides, par exemple :
     - Guide de création de fiche de personnage
     - Premiers pas dans le RP
-* Prise en charge des images
 * Compatibilité avec les appareils mobiles (déjà en charge, mais besoin de retour utilisateur pour optimisation)
 
-Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétique et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par l'administration du serveur Discord, et sont susceptibles d'évoluer en fonction des besoins.
+Les fonctionnalités listées ci-dessus sont susceptibles d'évoluer ; elles sont données à titre hypothétique et ne seront pas nécessairement implémentées. De même, d'autres fonctionnalités peuvent être ajoutées à la liste. Les priorités sont décidées par le responsable du wiki en accord avec les besoins de l'administration, et sont susceptibles d'évoluer en fonction des besoins.
 
 ## Crédits
 
