@@ -44,13 +44,15 @@ En tant que fée de l'eau, Anka sait manipuler l'eau liquide, mais ne se disting
 
 La jeune femme sait cependant qu’elle est capable de bien plus, mais ses nouveaux pouvoirs demeurent encore enveloppés de mystère. Anka, malgré sa connaissance théorique remarquable de la magie, reste encore très limitée par sa propre personnalité pour contrôler des pouvoirs qui ne lui obéissent que rarement. Outre la magie, Anka a une grande mémoire.
 
+---
+
 ## Situation en RP
 
 ### Appartement
 
 Anka partage sa chambre avec Rosé Dowling. Elle vit dans l'appartement 1 du dortoir des filles, dont ses autre colocataires sont Hope Mikaelson, Bloom Peters, Min-Ji Kang ainsi qu'Alexia Melody.
 
-### Liens
+### Liens actuels
 
 * Hope Mikaelson  
 Anka l'a rencontrée lors de la sortie d'intégration au camping, et a rapidement apprécié ses échanges avec elle. Elles firent face avec d'autres étudiants à trois brûlés dans une clairière, et il semblerait que cet évènement a créé des liens entres ces étudiants. Après s'être mis en profond désaccord avec elle suite à l'évènement du terrain, Anka s'est réconciliée avec elle.
@@ -69,6 +71,14 @@ Rencontrée lors de la fête de Seung, Yoona partage le point d'Anka sur Seung. 
 
 * Tassilo Shepherd  
 Ne s'étant vus qu'une fois sur le terrain en compagnie d'Hope, Anka s'est plutôt bien entendu avec lui.
+
+### Liens disponibles
+
+* Diane Palavan
+Diane est donc la grande sœur d'Anka. Leur relation s'est un peu complexifiée pour ne pas rentrer dans les détails, mais elles restent de la même famille. Il est difficile de dire ce qu'il adviendra de tout ceci. Actuellement, Diane occupe un poste de conseillère à la mairie d'Innsbruck, cependant étant aussi une fée de l'eau, Diane peut tout à fait être amenée à rejoindre l'école.
+
+* Sœur adoptive d'Anka et de Diane (prénom et nom libres)
+L'histoire de cette sœur est volontairement floue et déléguée au second plan. Ce personnage fait partie de l'histoire d'Anka afin de rendre un lien fraternel possible avec un nouveau personnage joué par un autre membre. Néanmoins, il existe toujours quelques restrictions mineures pour rester cohérent avec l'histoire d'Anka. Il sera notamment nécessaire de respecter le fait que cette sœur ait vécu à l'orphelinat d'Innsbruck.
 
 ---
 
