@@ -98,11 +98,11 @@ Vous pouvez définir des listes à puces à l'aide de tirets, d'étoiles ou autr
 
 Vous pouvez définir des liens à l'aide de crochets et de parenthèses. Le texte entre crochets est le texte du lien, et le texte entre parenthèses est l'URL du lien.
 
-Par exemple, le texte `[Wiki Winx Club](https://winx.fandom.com/fr/wiki/Wiki_Winx "Fandom Winx Club")` donnera le lien [Wiki Winx Club](https://winx.fandom.com/fr/wiki/Wiki_Winx "Fandom Winx Club") (vous pouvez passer la souris sur le lien pour voir le texte entre guillemets apparaître).
+Par exemple, le texte `[Wiki Winx Club](https://winx.fandom.com/fr/wiki/Wiki_Winx "Fandom Winx Club")` donnera le lien [Wiki Winx Club](https://winx.fandom.com/fr/wiki/Wiki_Winx "new:Fandom Winx Club") (vous pouvez passer la souris sur le lien pour voir le texte entre guillemets apparaître).
 
 ### Un exemple de mise en forme
 
-Le bloc de texte ci-dessous donne l'article de wiki que vous pouvez trouver [ici](a-nka.github.io/wiki/Exemple.html "Exemple de mise en forme"). L'exemple est volontairement très simple, mais il vous donne une idée de ce que vous pouvez faire avec le Markdown, et est représentatif d'un article typique du wiki.
+Le bloc de texte ci-dessous donne l'article de wiki que vous pouvez trouver [ici](/wiki/Exemple.html "Exemple de mise en forme"). L'exemple est volontairement très simple, mais il vous donne une idée de ce que vous pouvez faire avec le Markdown, et est représentatif d'un article typique du wiki.
 
 ```markdown
 
