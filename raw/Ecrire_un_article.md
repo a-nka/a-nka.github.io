@@ -1,6 +1,6 @@
 # Écrire un article de wiki
 
-# categories:guide
+_# categories:guide
 
 Dans ce guide, nous verrons comment écrire un article de wiki, comment le structurer et le mettre en forme. Pour cela, nous utiliserons la syntaxe [Markdown](https://www.markdownguide.org/ "new:Accueil du site officiel"), ce qui permet de rédiger plus rapidement et plus facilement qu'en [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language "new:HyperText Markup Language - Langage de balisage"), la syntaxe utilisée traditionnellement pour les sites internet.
 

@@ -134,7 +134,6 @@ p {
 
 .paragraph {
     margin-bottom: var(--bottom-margin);
-    text-align: justify;
 }
 
 .summary {

@@ -19,11 +19,13 @@ class Deployer():
                 pageTemplatePath: str,
                 indexTemplatePath: str,
                 categoriesTemplatePath: str,
+                menuFragmentPath: str
             ) -> None:
         self.sitename = sitename
-        self.pageTemplate = self._load(pageTemplatePath)
-        self.indexPageTemplate = self._load(indexTemplatePath)
-        self.categoriesPageTemplate = self._load(categoriesTemplatePath)
+        self.menuFragment = self._load(menuFragmentPath).format(sitename)
+        self.pageTemplate = self._load(pageTemplatePath).replace('{menu}', self.menuFragment)
+        self.indexPageTemplate = self._load(indexTemplatePath).replace('{menu}', self.menuFragment)
+        self.categoriesPageTemplate = self._load(categoriesTemplatePath).replace('{menu}', self.menuFragment)
 
     def _load(self, path: str) -> str:
         with open(path, 'r', encoding = 'utf-8') as input:
@@ -34,10 +36,11 @@ class Deployer():
             output.write(content)
         
     def deploy(self, root: DeploymentPath, folder: DeploymentPath, categories: dict) -> None:
+
         categorizer = Categorizer(
             categories,
             self.categoriesPageTemplate,
-            os.path.join(root.to, 'catégories.html')
+            os.path.join(root.to, 'categories.html')
         )
         renderer = Renderer(categorizer)
         markdown = mistune.create_markdown(
@@ -66,7 +69,7 @@ class Deployer():
             renderer.reset()
 
         self._write(
-            os.path.join(root.src, 'catégories.html'),
+            os.path.join(root.src, 'categories.html'),
             categorizer.render(self.sitename)
         )
         

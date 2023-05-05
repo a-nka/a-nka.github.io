@@ -45,7 +45,8 @@ if __name__ == '__main__':
         sitename,
         os.path.join(data, 'basePage.html'),
         os.path.join(data, 'baseIndex.html'),
-        os.path.join(data, 'baseCategories.html')
+        os.path.join(data, 'baseCategories.html'),
+        os.path.join(data, 'menu.html'),
     )
 
     deployer.deploy(root, wiki, categories)
