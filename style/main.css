@@ -49,29 +49,32 @@ html, body {
 /* Footer */
 
 footer {
+    display: flex;
+    justify-content: flex-end;
+
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 footer a {
-    display: block;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
 
     border-radius: 16px;
-    padding: 10px;
-    border: 2px solid var(--main-text-color);
+    padding: 10px 20px;
+    border: 2px solid var(--main-s-em-background-color);
 
     background-color: var(--main-background-color);
-    color: var(--main-text-color);
+    color: var(--main-m-em-background-color);
 
     transition: background-color 0.3s, color 0.3s;
 }
 
 .footer-link:hover {
     text-decoration: none;
-    background-color: var(--main-text-color);
-    color: var(--main-background-color);
+    background-color: var(--main-m-em-background-color);
+    color: var(--main-h-em-background-color);
 }
 
 /* Main */
