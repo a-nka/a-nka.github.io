@@ -32,7 +32,7 @@ sys.excepthook = excepthook
 
 if __name__ == '__main__':
 
-    sitename = 'Destin RP'
+    sitename = 'D-02'
 
     root = DeploymentPath('.', '/')
     wiki = DeploymentPath('raw', 'wiki')
