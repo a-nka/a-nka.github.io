@@ -48,10 +48,7 @@ La jeune femme sait cependant qu’elle est capable de bien plus, mais ses nouve
 
 ## Situation en RP
 
-### Appartement
-
-Anka partage sa chambre avec Rosé Dowling. Elle vit dans l'appartement 1 du dortoir des filles, dont ses autre colocataires sont Hope Mikaelson, Bloom Peters, Min-Ji Kang ainsi qu'Alexia Melody.
-
+<!--
 ### Liens actuels
 
 * Hope Mikaelson  
@@ -68,10 +65,7 @@ Croisé une fois par hasard, elle désapprouve ses modes de pensées, bien qu'el
 
 * Yoona Chû  
 Rencontrée lors de la fête de Seung, Yoona partage le point d'Anka sur Seung. Le courant est bien passé, et sont restés en contact après cela.
-
-* Tassilo Shepherd  
-Ne s'étant vus qu'une fois sur le terrain en compagnie d'Hope, Anka s'est plutôt bien entendu avec lui.
-
+-->
 ### Liens disponibles
 
 * Diane Palavan
