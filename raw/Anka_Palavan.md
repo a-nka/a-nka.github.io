@@ -8,7 +8,7 @@ Née comme une fée de l'eau, Anka Palavan tient dans les faits plus d'une fée 
 
 ![Image d'Anka Palavan](/img/anka_1.png "Anka Palavan$Anka Palavan en 2022")
 
-### Vie sur Terre
+### Son enfance sur Terre
 
 Anka naît de parents fonctionnaires le 22 février 2004 en Autriche à Innsbruck. Comme elle, ses parents sont deux fées de l’eau et ont quitté le monde magique pour la Terre afin d’y trouver une vie plus tranquille. Diane, sa sœur de douze ans son aînée, est également une fée de l’eau accomplie. La fratrie compte également une sœur adoptive, elle aussi à Alféa, cependant celle-ci est en seconde année.
 
@@ -24,7 +24,7 @@ Anka souhaite plus que tout apprendre selon ses envies, découvrir, côtoyer les
 
 Un soir, particulièrement énervée après une énième dispute avec ses parents, Anka s'était aventurée loin dans les montagnes alpines. Ne trouvant plus son chemin dans les ténèbres, la jeune femme passa plusieurs heures dans le froid, trébucha dans la neige à multiples reprises ; jusqu’à chuter de plusieurs mètres de haut. Anka tomba dans l’épais manteau de neige et perdit conscience. Lorsqu’elle se réveilla, il faisait nuit, et son bras droit la faisait terriblement souffrir. C’était déjà une chance énorme d’avoir survécu, et sa fortune continuait de lui sourire tandis qu’elle trouvait un refuge de montagne. Anka y passa la nuit, seule, bloquée par la tempête. Retirant ses vêtements glacés, elle vit l’état désastreux et insensé de son bras. Une sorte de grande plaque gelée rongeait sa peau meurtrie, comme si de la glace avait recouvert son membre. Se mettant près du feu pour tout faire fondre, elle s'endormit, non sans mal.
 
-### Arrivée à Alféa
+### Son arrivée à Alféa
 
 Cependant à son réveil, rien n’avait changé, son bras se trouvait dans le même état. Effrayée par le phénomène inexplicable, Anka rentra chez elle, et fut accueillie par sa famille terriblement inquiète. Personne, parents ou médecins, ne sut lui expliquer ce qui lui arrivait. Même le temps ne pouvait rien contre cette blessure. Et malgré tout, Anka restait avide de réponses. Sur le conseil de ses parents et dans l’espoir que la magie puisse répondre à ses attentes, elle décide d'aller à Alféa en première année, sa sœur adoptive rentrant déjà en deuxième année. La jeune femme laissa alors derrière elle ses parents inquiets et sa soeur Diane, avec laquelle elle demeure encore en fort désaccord.
 
