@@ -17,7 +17,7 @@
 
 .menu-title {
     width: fit-content;
-    background: linear-gradient(to top, var(--menu-background-color) 0%, var(--menu-text-color) 40%);
+    background: linear-gradient(to top, var(--menu-background-color) 20%, var(--menu-text-color) 50%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
