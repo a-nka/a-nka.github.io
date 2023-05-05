@@ -73,6 +73,8 @@ class Renderer(mistune.HTMLRenderer):
             info = info.strip()
         if info:
             lang = info.split(None, 1)[0]
+            if lang == 'comment':
+                return ''
             lang = escape_html(lang)
             lexer = get_lexer_by_name(lang, stripall = True)
             formatter = html.HtmlFormatter()

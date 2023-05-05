@@ -48,7 +48,7 @@ La jeune femme sait cependant qu’elle est capable de bien plus, mais ses nouve
 
 ## Situation en RP
 
-<!--
+```comment
 ### Liens actuels
 
 * Hope Mikaelson  
@@ -65,7 +65,8 @@ Croisé une fois par hasard, elle désapprouve ses modes de pensées, bien qu'el
 
 * Yoona Chû  
 Rencontrée lors de la fête de Seung, Yoona partage le point d'Anka sur Seung. Le courant est bien passé, et sont restés en contact après cela.
--->
+```
+
 ### Liens disponibles
 
 * Diane Palavan
