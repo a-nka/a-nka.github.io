@@ -35,7 +35,7 @@ if __name__ == '__main__':
     sitename = 'D-02'
 
     root = DeploymentPath('.', '/')
-    wiki = DeploymentPath('raw', 'wiki')
+    pages = DeploymentPath('raw', 'pages')
     data = os.path.join(root.src, 'data')
 
     with open(os.path.join(data, 'categories.json'), 'r', encoding = 'utf-8') as f:
@@ -49,4 +49,4 @@ if __name__ == '__main__':
         os.path.join(data, 'menu.html'),
     )
 
-    deployer.deploy(root, wiki, categories)
+    deployer.deploy(root, pages, categories)
